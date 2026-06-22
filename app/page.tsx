@@ -60,7 +60,6 @@ export default function Home() {
             Documentation
           </a>
         </div>
-        <ModeToggle />
       </main>
     </div>
   );
