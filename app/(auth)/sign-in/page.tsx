@@ -13,6 +13,7 @@ import {
   FieldGroup,
   FieldSet,
 } from "@/components/ui/field";
+import { GitHubSignInForm } from "@/features/auth/components/github-signin-form";
 
 export const metadata: Metadata = {
   title: "Sign in",
@@ -24,6 +25,7 @@ type SignInPageProps = {
 };
 
 const SignInPage = async ({ searchParams }: SignInPageProps) => {
+  const { callbackUrl } = await searchParams;
   return (
     <Card className="border-border/80 shadow-sm">
       <CardHeader className="items-center text-center">
