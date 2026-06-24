@@ -29,12 +29,12 @@ const SignInPage = async ({ searchParams }: SignInPageProps) => {
   return (
     <Card className="border-border/80 shadow-sm">
       <CardHeader className="items-center text-center">
-        <div className="mb-6 justify-center pt-2">
+        <div className="mb-4 flex justify-center pt-2">
           <Image
-            src="/productlogo.svg"
+            src="/productlogo-codebunny.png"
             alt="Product mainlogo"
-            width={100}
-            height={100}
+            width={400}
+            height={400}
             priority
             className="text-foreground"
           />
