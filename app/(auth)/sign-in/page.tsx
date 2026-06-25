@@ -29,15 +29,16 @@ const SignInPage = async ({ searchParams }: SignInPageProps) => {
   return (
     <Card className="border-border/80 shadow-sm">
       <CardHeader className="items-center text-center">
-        <div className="mb-4 flex justify-center pt-2">
+        <div className="flex flex-col justify-center pt-2">
           <Image
-            src="/productlogo-codebunny.png"
+            src="/productlogo-codebunny-1.png"
             alt="Product mainlogo"
             width={400}
             height={400}
             priority
             className="text-foreground"
           />
+          <div>asdakjsd</div>
         </div>
         <CardTitle className="text-base">Welcome back!</CardTitle>
         <CardDescription>
@@ -49,7 +50,7 @@ const SignInPage = async ({ searchParams }: SignInPageProps) => {
           <FieldGroup>
             <Field>
               <GitHubSignInForm callbackUrl={callbackUrl} />
-              <FieldDescription>
+              <FieldDescription className="text-center">
                 We only request the permission we needed to identify your
                 account. You can revoke access anytime from GitHub settings.
               </FieldDescription>
